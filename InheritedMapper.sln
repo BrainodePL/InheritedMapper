@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritedMapper", "InheritedMapper\InheritedMapper.csproj", "{907A9B51-35C3-4B4B-BD39-EE9D6CFE9D90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritedMapper.Tests", "InheritedMapper.Tests\InheritedMapper.Tests.csproj", "{802C7396-A678-4EB1-93D2-975F69113A7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907A9B51-35C3-4B4B-BD39-EE9D6CFE9D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907A9B51-35C3-4B4B-BD39-EE9D6CFE9D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907A9B51-35C3-4B4B-BD39-EE9D6CFE9D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907A9B51-35C3-4B4B-BD39-EE9D6CFE9D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{802C7396-A678-4EB1-93D2-975F69113A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802C7396-A678-4EB1-93D2-975F69113A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802C7396-A678-4EB1-93D2-975F69113A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802C7396-A678-4EB1-93D2-975F69113A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBE24181-7C06-48E5-9EDB-8984A0A11866}
+	EndGlobalSection
+EndGlobal

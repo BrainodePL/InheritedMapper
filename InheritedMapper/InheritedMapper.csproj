@@ -4,7 +4,32 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Inherited mapper OOP - use it for object creation with type specified in view model string property</Title>
+    <Description>A library for programmers actively practicing object-oriented programming (OOP). Facilitates the mapping of View model or DTO objects to target classes whose name is given in the viewmodel prop, with the proviso that the base abstract class must be explicitly specified by the developer.</Description>
+    <Copyright>ITBees.pl</Copyright>
+    <PackageProjectUrl>Itbees.pl/InheritedMapper</PackageProjectUrl>
+    <PackageIcon>ITBeesOOPLogo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/ITBeesPL/InheritedMapper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>Jakub Zohar Rutkowski</Authors>
+    <PackageId>ITBeesPL.$(AssemblyName)</PackageId>
+    <PackageTags>Mapping, OOP, Inheritance, Tinymapper, Automapper</PackageTags>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\ITBeesOOPLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="TinyMapper" Version="3.0.3" />
