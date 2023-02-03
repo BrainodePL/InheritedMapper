@@ -5,3 +5,4 @@ InheritedMapper/obj/
 *.ncrunchsolution
 *.ncrunchsolution.user
 .vs/
+_NCrunch*

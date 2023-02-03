@@ -24,6 +24,7 @@
     <None Include="..\..\..\..\Downloads\ITBeesOOPLogo.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
