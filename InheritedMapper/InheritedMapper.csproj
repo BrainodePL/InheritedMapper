@@ -18,11 +18,11 @@
     <PackageTags>Mapping, OOP, Inheritance, Tinymapper, Automapper</PackageTags>
     <Version>1.0.1</Version>
     <AssemblyVersion>1.0.1.1</AssemblyVersion>
-    <ApplicationIcon>ITBeesOOPLogo.png</ApplicationIcon>
+    <ApplicationIcon>ITBeesOOPLogo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ITBeesOOPLogo.png">
+    <Content Include="ITBeesOOPLogo.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -36,12 +36,6 @@
 
   <ItemGroup>
     <PackageReference Include="TinyMapper" Version="3.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="ITBeesOOPLogo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
