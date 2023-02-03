@@ -21,11 +21,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Downloads\ITBeesOOPLogo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -34,6 +29,12 @@
 
   <ItemGroup>
     <PackageReference Include="TinyMapper" Version="3.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ITBeesOOPLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
