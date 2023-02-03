@@ -7,7 +7,7 @@
     <authors>Jakub Zohar Rutkowski ITBees.pl</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <icon>ITBeesOOPLogo.png</icon>
+    <icon>ITBeesOOPLogo.ico</icon>
     <releaseNotes></releaseNotes>
     <tags>Mapping, OOP, Inheritance, Tinymapper, Automapper</tags>
     <description>A library for programmers actively practicing object-oriented programming (OOP). Facilitates the mapping of View model or DTO objects to target classes whose name is given in the viewmodel prop, with the proviso that the base abstract class must be explicitly specified by the developer.</description>
