@@ -9,7 +9,7 @@
     <Description>A library for programmers actively practicing object-oriented programming (OOP). Facilitates the mapping of View model or DTO objects to target classes whose name is given in the viewmodel prop, with the proviso that the base abstract class must be explicitly specified by the developer.</Description>
     <Copyright>ITBees.pl</Copyright>
     <PackageProjectUrl>Itbees.pl/InheritedMapper</PackageProjectUrl>
-    <PackageIcon>ITBeesOOPLogo.ico</PackageIcon>
+    <PackageIcon>ITBeesOOPLogo.png</PackageIcon>
     <RepositoryUrl>https://github.com/ITBeesPL/InheritedMapper</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -36,6 +36,14 @@
 
   <ItemGroup>
     <PackageReference Include="TinyMapper" Version="3.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ITBeesOOPLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
