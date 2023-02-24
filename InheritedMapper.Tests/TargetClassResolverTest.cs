@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using InheritedMapper.Tests.SampleClasses;
 using Nelibur.ObjectMapper;
 using NUnit.Framework;
 
@@ -109,45 +110,4 @@ namespace InheritedMapper.Tests
 
 
     }
-
-    public abstract class ExpandedBaseAbstract
-    {
-        public Guid Guid { get; set; }
-        public string ProductName { get; set; }
-        public SampleBase SampleBase { get; set; }
-    }
-    
-    public class ExpandedBase : ExpandedBaseAbstract
-    {
-    }
-    
-    public class BaseNotAbstractClass
-    {
-    }
-
-    public class SampleViewModel
-    {
-        public Guid Guid { get; set; }
-        public string SampleViewModelType { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public decimal ElementPrice { get; set; }
-        public string OnlySecondDerivedSampleValue { get; set; }
-    }
-
-    public abstract class SampleBase
-    {
-        public Guid Guid { get; set; }
-        public decimal ElementPrice { get; set; }
-    }
-
-    public class DerivedSample : SampleBase
-    {
-
-    }
-    public class DerivedSecondSample : SampleBase
-    {
-        public string OnlySecondDerivedSampleValue { get; set; }
-    }
-
-
 }
