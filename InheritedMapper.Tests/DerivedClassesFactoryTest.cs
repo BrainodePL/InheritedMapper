@@ -10,7 +10,7 @@ public class DerivedClassesFactoryTest
     {
         var allDerivedClassesCount = BaseClassHelper.GetAllDerivedClassesFromBaseClass(typeof(SampleBase));
         
-        var derivedClasses = DerivedClassesFactory.Create<SampleBase>(typeof(SampleBase));
+        var derivedClasses = DerivedClassesFactory.CreateDerivedClasses<SampleBase>();
         
         Assert.True(derivedClasses.Count() == allDerivedClassesCount.Length);
     }

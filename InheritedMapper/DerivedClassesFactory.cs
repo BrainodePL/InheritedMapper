@@ -8,9 +8,9 @@ namespace InheritedMapper
 {
     public class DerivedClassesFactory
     {
-        public static IEnumerable<T> Create<T>(Type type) where T : class
+        public static IEnumerable<T> CreateDerivedClasses<T>() where T : class
         {
-            foreach (var derivedType in BaseClassHelper.GetAllDerivedClassesFromBaseClass(type))
+            foreach (var derivedType in BaseClassHelper.GetAllDerivedClassesFromBaseClass(typeof(T)))
             {
                 yield return (T) Activator.CreateInstance(derivedType);
             }
