@@ -30,6 +30,7 @@ namespace InheritedMapper
         {
             Type[] targetClass = GetAllDerivedClassesFromBaseClass(baseClassType);
             var realizationClassType = targetClass.First(type => type.Name == derivedClassName);
+
             return realizationClassType;
         }
     }
