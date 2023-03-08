@@ -21,14 +21,10 @@ namespace InheritedMapper.Tests.InheritedTypeMapperTests
 
            
             stopwatch.Start();
-            List<MyVmDerivedTestClassVm> myVmDerivedTestClassVms = null;
-            InheritedTypeMapper.MapAndModify(vms, ref myVmDerivedTestClassVms);
-            stopwatch.Stop();
-            foreach (var myVmDerivedTestClassVm in myVmDerivedTestClassVms)
-            {
-                Console.WriteLine(myVmDerivedTestClassVm.MyVmDerivedTestClassVmType);
-            }
 
+            List<MyVmDerivedTestClassVm> myVmDerivedTestClassVms  = InheritedTypeMapper.MapAndModify<Vm, MyVmDerivedTestClassVm>(vms);
+            stopwatch.Stop();
+            
             Assert.True(myVmDerivedTestClassVms.First().MyVmDerivedTestClassVmType == "AVm");
             Assert.True(myVmDerivedTestClassVms.Last().MyVmDerivedTestClassVmType == "BVm");
             Console.WriteLine($"Method take : {stopwatch.ElapsedTicks} ticks");
@@ -48,13 +44,8 @@ namespace InheritedMapper.Tests.InheritedTypeMapperTests
             TinyMapper.Bind<List<Vm>, List<MyVmDerivedTestClassVm>>();
 
             stopwatch.Start();
-            List<MyVmDerivedTestClassVm> myVmDerivedTestClassVms = null;
-            InheritedTypeMapper.MapAndModifyUsingReflection(vms, ref myVmDerivedTestClassVms);
+            var myVmDerivedTestClassVms = InheritedTypeMapper.MapAndModifyUsingReflection<Vm, MyVmDerivedTestClassVm>(vms);
             stopwatch.Stop();
-            foreach (var myVmDerivedTestClassVm in myVmDerivedTestClassVms)
-            {
-                Console.WriteLine(myVmDerivedTestClassVm.MyVmDerivedTestClassVmType);
-            }
 
             Assert.True(myVmDerivedTestClassVms.First().MyVmDerivedTestClassVmType == "AVm");
             Assert.True(myVmDerivedTestClassVms.Last().MyVmDerivedTestClassVmType == "BVm");

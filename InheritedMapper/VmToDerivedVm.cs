@@ -39,7 +39,6 @@ namespace InheritedMapper
 
             foreach (var baseObj in baseVmObject)
             {
-                Console.WriteLine(baseObj);
                 var derivedObject = GetDerivedObject(baseObj);
                 newList.Add(derivedObject);
             }
