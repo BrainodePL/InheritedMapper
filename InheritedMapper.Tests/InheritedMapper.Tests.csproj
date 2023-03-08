@@ -17,4 +17,8 @@
     <ProjectReference Include="..\InheritedMapper\InheritedMapper.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="InheritedTypeMapperTests\" />
+  </ItemGroup>
+
 </Project>

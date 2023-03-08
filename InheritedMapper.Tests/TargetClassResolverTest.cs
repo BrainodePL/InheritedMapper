@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using InheritedMapper.Tests.SampleClasses;
+﻿using InheritedMapper.Tests.SampleClasses;
 using Nelibur.ObjectMapper;
 using NUnit.Framework;
 
