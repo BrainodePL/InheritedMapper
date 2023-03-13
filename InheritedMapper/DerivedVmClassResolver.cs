@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Text.Json;
 
 namespace InheritedMapper
@@ -7,7 +8,7 @@ namespace InheritedMapper
     {
         public object Get(string serializedDerivedFromBaseClass)
         {
-            
+
             var deserialized = JsonSerializer.Deserialize<T>(serializedDerivedFromBaseClass, new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
@@ -19,7 +20,7 @@ namespace InheritedMapper
 
         public object GetMany(string serializedDerivedFromBaseClass)
         {
-            
+
             var deserialized = JsonSerializer.Deserialize<List<T>>(serializedDerivedFromBaseClass, new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
