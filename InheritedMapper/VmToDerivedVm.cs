@@ -18,7 +18,7 @@ namespace InheritedMapper
             {
                 if (property.Name == name)
                 {
-                    var targetClassName = property.GetValue(baseVmObject)?.ToString() + "Vm";
+                    var targetClassName = property.GetValue(baseVmObject)?.ToString();
                     var derivedType = BaseClassHelper.GetDerivedType(typeof(T), targetClassName);
                     var resultObject = TinyMapper.Map(baseVmObject.GetType(), derivedType, baseVmObject);
 
