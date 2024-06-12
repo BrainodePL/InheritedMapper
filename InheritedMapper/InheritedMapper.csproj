@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Inherited mapper OOP - use it for object creation with type specified in view model string property</Title>
     <Description>A library for programmers actively practicing object-oriented programming (OOP). Facilitates the mapping of View model or DTO objects to target classes whose name is given in the viewmodel prop, with the proviso that the base abstract class must be explicitly specified by the developer.</Description>
