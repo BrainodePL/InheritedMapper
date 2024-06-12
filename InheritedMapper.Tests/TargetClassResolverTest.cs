@@ -20,9 +20,9 @@ namespace InheritedMapper.Tests
             var derivedSample = VmToInheritedModel.TryCreate<SampleViewModel, SampleBase>
                 (sampleViewModel, sampleViewModel.SampleViewModelType, typeof(SampleBase));
 
-            Assert.True(sampleViewModel.Guid == derivedSample.Guid);
-            Assert.True(sampleViewModel.CreatedDate == new DateTime(2023, 01, 23, 23, 23, 23));
-            Assert.True(sampleViewModel.ElementPrice == derivedSample.ElementPrice);
+            Assert.That(sampleViewModel.Guid == derivedSample.Guid);
+            Assert.That(sampleViewModel.CreatedDate == new DateTime(2023, 01, 23, 23, 23, 23));
+            Assert.That(sampleViewModel.ElementPrice == derivedSample.ElementPrice);
         }
 
         [Test]
@@ -40,10 +40,10 @@ namespace InheritedMapper.Tests
             DerivedSecondSample derivedSecondSample = (DerivedSecondSample)VmToInheritedModel.TryCreate<SampleViewModel, SampleBase>
                 (sampleViewModel, sampleViewModel.SampleViewModelType, typeof(SampleBase));
 
-            Assert.True(sampleViewModel.Guid == derivedSecondSample.Guid);
-            Assert.True(sampleViewModel.CreatedDate == new DateTime(2023, 01, 23, 23, 23, 23));
-            Assert.True(sampleViewModel.ElementPrice == derivedSecondSample.ElementPrice);
-            Assert.True(sampleViewModel.OnlySecondDerivedSampleValue == derivedSecondSample.OnlySecondDerivedSampleValue);
+            Assert.That(sampleViewModel.Guid == derivedSecondSample.Guid);
+            Assert.That(sampleViewModel.CreatedDate == new DateTime(2023, 01, 23, 23, 23, 23));
+            Assert.That(sampleViewModel.ElementPrice == derivedSecondSample.ElementPrice);
+            Assert.That(sampleViewModel.OnlySecondDerivedSampleValue == derivedSecondSample.OnlySecondDerivedSampleValue);
         }
 
         [Test]
@@ -65,7 +65,7 @@ namespace InheritedMapper.Tests
             var result = VmToInheritedModel.TryCreate<SampleViewModel, ExpandedBaseAbstract>
                 (sampleViewModel, sampleViewModel.SampleViewModelType, typeof(ExpandedBaseAbstract));
 
-            Assert.IsInstanceOf<ExpandedBase>(result);
+            Assert.That(result, Is.InstanceOf<ExpandedBase>());
         }
 
         [Test]
@@ -81,8 +81,8 @@ namespace InheritedMapper.Tests
             var result = VmToInheritedModel.TryCreate<SampleViewModel, ExpandedBaseAbstract>
                 (sampleViewModel, sampleViewModel.SampleViewModelType, typeof(ExpandedBaseAbstract));
 
-            Assert.True(result.ProductName == targetDerivedClassTypeName);
-            Assert.True(result.SampleBase == null);
+            Assert.That(result.ProductName == targetDerivedClassTypeName);
+            Assert.That(result.SampleBase == null);
         }
 
         [Test]
@@ -104,7 +104,7 @@ namespace InheritedMapper.Tests
             var derivedSample = VmToInheritedModel.TryCreate<SampleViewModel, SampleBase>
                 (sampleViewModel, sampleViewModel.SampleViewModelType, typeof(SampleBase));
 
-            Assert.IsInstanceOf<DerivedSample>(derivedSample);
+            Assert.That(derivedSample,Is.InstanceOf<DerivedSample>());
         }
 
 

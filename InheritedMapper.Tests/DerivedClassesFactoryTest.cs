@@ -12,6 +12,6 @@ public class DerivedClassesFactoryTest
         
         var derivedClasses = DerivedClassesFactory.CreateDerivedClasses<SampleBase>();
         
-        Assert.True(derivedClasses.Count() == allDerivedClassesCount.Length);
+        Assert.That(derivedClasses.Count() == allDerivedClassesCount.Length);
     }
 }

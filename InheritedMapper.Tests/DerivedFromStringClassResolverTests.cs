@@ -9,6 +9,6 @@ public class DerivedFromStringClassResolverTests
     public void GetInstance_ShouldReturnInstanceOfDerivedClass()
     {
         var s = new DerivedFromStringClassResolver<ExpandedBaseAbstract>().GetInstance(nameof(ExpandedBase));
-        Assert.IsInstanceOf<ExpandedBase>(s);
+        Assert.That(s, Is.InstanceOf<ExpandedBase>());
     }
 }
